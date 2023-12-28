@@ -15,6 +15,7 @@ import dj_database_url
 import environ
 env = environ.Env()
 environ.Env.read_env()
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -107,8 +108,7 @@ WSGI_APPLICATION = 'mamar_bank.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default='postgres://mamarbank_user:LALgYwd0AYd1wgoh3tFD2Mx6wa1tR4Rs@dpg-cm551lmd3nmc73am8kt0-a.oregon-postgres.render.com/mamarbank',
+        default='postgres://mamar_bank_bfb0_user:fsGS10tskb7BJNaxoau1IwAuGZMgbYsM@dpg-cm6le3i1hbls73a80f2g-a.oregon-postgres.render.com/mamar_bank_bfb0',
     )
 }
 
